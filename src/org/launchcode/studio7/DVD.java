@@ -1,10 +1,10 @@
 package org.launchcode.studio7;
 
-public class DVD {
+public class DVD extends BasicDisc {
+    private final static int DEFAULT_MIN_SPEED = 570;
+    private final static int DEFAULT_MAX_SPEED = 1600;
 
-    // TODO: Implement your custom interface.
-
-    // TODO: Determine which fields, methods, and constructors can be extended from the base class and which ones
-    //  need to be declared separately.
-
+    public DVD() {
+        super(DEFAULT_MIN_SPEED, DEFAULT_MAX_SPEED);
+    }
 }

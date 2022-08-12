@@ -1,10 +1,10 @@
 package org.launchcode.studio7;
 
-public class CD {
+public class CD extends BasicDisc {
+    private final static int DEFAULT_MIN_SPEED = 200;
+    private final static int DEFAULT_MAX_SPEED = 500;
 
-    // TODO: Implement your custom interface.
-
-    // TODO: Determine which fields, methods, and constructors can be extended from the base class and which ones
-    //  need to be declared separately.
-
+    public CD() {
+        super(DEFAULT_MIN_SPEED, DEFAULT_MAX_SPEED);
+    }
 }
